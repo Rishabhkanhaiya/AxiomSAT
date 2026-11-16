@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axiomsat"
+version = "0.1.0"
+description = "A CDCL-Based Boolean Satisfiability (SAT) Engine with Graph Isomorphism and Formal Verification Benchmarking"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Rishabh Joshi" }
+]
+dependencies = [
+    "networkx>=3.0",
+    "streamlit>=1.30.0",
+    "matplotlib>=3.7.0",
+    "pandas>=2.0.0",
+    "rich>=13.0.0",
+    "python-sat>=0.1.8.dev1",
+    "python-pptx>=0.6.21"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
